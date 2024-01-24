@@ -11,11 +11,11 @@ public class number_1000 {
 	
 	public static void main(String[] args) throws IOException {
 		BufferedReader br = new BufferedReader(new InputStreamReader(System.in)); // 버퍼리더를 통해 스페이스바를 통해 여러개의 숫자 받음 
-		StringTokenizer st = new StringTokenizer(br.readLine(), " "); // readline으로 한줄 받아온걸 구분자 " " 로 구분
+		StringTokenizer st = new StringTokenizer(br.readLine(), " "); // readline으로 한줄 받아온걸 구분자 " " 로 나눔
 		int A = Integer.parseInt(st.nextToken()); // nextToken에서 String으로 받아온걸 Int로 변환
 		int B = Integer.parseInt(st.nextToken()); // nextToken에서 String으로 받아온걸 Int로 변환
 		System.out.println( A + B );
-		br.close();
+		br.close(); // 가비지 컬렉터에 의해 자동으로 제거되지만 확실히 하기 위해
 	}
 
 }

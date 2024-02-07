@@ -44,13 +44,11 @@ public class number_2884 {
 			H--; // 시간 -1
 			M = M - 45 + 60; // 분 - 45 + 60(1H)
 			
-			if (H < 0) { // M < 45 이고 H-- 한 시간이 0 미만 일 경우
+			if (H < 0) { // H-- 한 시간이 0 미만 일 경우
 				H = 23; 
 			}
 			System.out.println(H + " " + M);
-		} else {
-			System.out.println(H + " " + (M - 45));
-		}
+		} 
 		// ----------- 조건문 종료  -----------
 
 		

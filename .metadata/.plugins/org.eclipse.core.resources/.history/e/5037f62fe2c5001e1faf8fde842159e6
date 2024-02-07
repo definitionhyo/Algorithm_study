@@ -35,24 +35,11 @@ public class number_2884 {
 		do {
 			H = Integer.parseInt(st.nextToken()); // 첫번째 토큰화 한 문자열을 정수로 형변환 후 H에 저장
 			M = Integer.parseInt(st.nextToken()); // 두번째 토큰화 한 문자열을 정수로 형변환 후 M에 저장
-		} while (H < 0 || H > 23 || M < 0 || M > 59);
-		// ----------- 반복문24 종료  -----------
+		} while (H < 0 || H > 24 && M < 0 || M > 60);
+		// ----------- 반복문 종료  -----------
 		
 		
-		// 조건문 
-		if (M < 45) { // 45분 이하일때 
-			H--; // 시간 -1
-			M = M - 45 + 60; // 분 - 45 + 60(1H)
-			
-			if (H < 0) { // M < 45 이고 H-- 한 시간이 0 미만 일 경우
-				H = 23; 
-			}
-			System.out.println(H + " " + M);
-		} else {
-			System.out.println(H + " " + (M - 45));
-		}
-		// ----------- 조건문 종료  -----------
-
+		
 		
 		
 		

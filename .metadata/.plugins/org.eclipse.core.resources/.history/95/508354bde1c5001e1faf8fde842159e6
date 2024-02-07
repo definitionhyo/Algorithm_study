@@ -22,7 +22,7 @@ public class number_2884 {
 		
 		BufferedReader br = new BufferedReader(new InputStreamReader(System.in)); // 버퍼 리더를 통해 입력 받음
 		StringTokenizer st = new StringTokenizer(br.readLine(), " "); // 구분자 공백으로 문자열을 토큰화함
-		int H = 0 , M = 0; // 정수형 변수 선언
+		int H =0, M = 0; // 정수형 변수 선언
 		
 		// 입력 
 //		첫째 줄에 두 정수 H와 M이 주어진다. (0 ≤ H ≤ 23, 0 ≤ M ≤ 59) 
@@ -33,26 +33,8 @@ public class number_2884 {
 		
 		// 반복문 시작(조건에 맞지않는 경우 반복)
 		do {
-			H = Integer.parseInt(st.nextToken()); // 첫번째 토큰화 한 문자열을 정수로 형변환 후 H에 저장
-			M = Integer.parseInt(st.nextToken()); // 두번째 토큰화 한 문자열을 정수로 형변환 후 M에 저장
-		} while (H < 0 || H > 23 || M < 0 || M > 59);
-		// ----------- 반복문24 종료  -----------
-		
-		
-		// 조건문 
-		if (M < 45) { // 45분 이하일때 
-			H--; // 시간 -1
-			M = M - 45 + 60; // 분 - 45 + 60(1H)
 			
-			if (H < 0) { // M < 45 이고 H-- 한 시간이 0 미만 일 경우
-				H = 23; 
-			}
-			System.out.println(H + " " + M);
-		} else {
-			System.out.println(H + " " + (M - 45));
-		}
-		// ----------- 조건문 종료  -----------
-
+		} while (H < 0 || H > 24 && M < 0 || M > 60);
 		
 		
 		

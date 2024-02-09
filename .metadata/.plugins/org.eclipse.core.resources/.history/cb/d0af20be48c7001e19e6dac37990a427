@@ -1,0 +1,63 @@
+package baekjoon.conditional;
+
+import java.io.BufferedReader;
+import java.io.IOException;
+import java.io.InputStreamReader;
+import java.util.StringTokenizer;
+
+public class number_2884 {
+
+	public static void main(String[] args) throws IOException {
+		
+//		상근이는 매일 아침 알람을 듣고 일어난다. 알람을 듣고 바로 일어나면 다행이겠지만, 
+//		항상 조금만 더 자려는 마음 때문에 매일 학교를 지각하고 있다.
+//		상근이는 모든 방법을 동원해보았지만, 조금만 더 자려는 마음은 그 어떤 것도 없앨 수가 없었다.
+//		이런 상근이를 불쌍하게 보던 창영이는 자신이 사용하는 방법을 추천해 주었다.
+//		바로 "45분 일찍 알람 설정하기"이다.
+//		이 방법은 단순하다. 원래 설정되어 있는 알람을 45분 앞서는 시간으로 바꾸는 것이다. 
+//		어차피 알람 소리를 들으면, 알람을 끄고 조금 더 잘 것이기 때문이다. 
+//		이 방법을 사용하면, 매일 아침 더 잤다는 기분을 느낄 수 있고, 학교도 지각하지 않게 된다.
+//		현재 상근이가 설정한 알람 시각이 주어졌을 때, 창영이의 방법을 사용한다면, 
+//		이를 언제로 고쳐야 하는지 구하는 프로그램을 작성하시오.
+		
+		BufferedReader br = new BufferedReader(new InputStreamReader(System.in)); // 버퍼 리더를 통해 입력 받음
+		StringTokenizer st = new StringTokenizer(br.readLine(), " "); // 구분자 공백으로 문자열을 토큰화함
+		int H = 0 , M = 0; // 정수형 변수 선언
+		
+		// 입력 
+//		첫째 줄에 두 정수 H와 M이 주어진다. (0 ≤ H ≤ 23, 0 ≤ M ≤ 59) 
+//		그리고 이것은 현재 상근이가 설정한 알람 시간 H시 M분을 의미한다.
+//		입력 시간은 24시간 표현을 사용한다. 
+//		24시간 표현에서 하루의 시작은 0:0(자정)이고, 끝은 23:59(다음날 자정 1분 전)이다. 
+//		시간을 나타낼 때, 불필요한 0은 사용하지 않는다.
+		
+		// 반복문 시작(조건에 맞지않는 경우 반복)
+		do {
+			H = Integer.parseInt(st.nextToken()); // 첫번째 토큰화 한 문자열을 정수로 형변환 후 H에 저장
+			M = Integer.parseInt(st.nextToken()); // 두번째 토큰화 한 문자열을 정수로 형변환 후 M에 저장
+			break;
+		} while (H < 0 || H > 23 || M < 0 || M > 59);
+		// ----------- 반복문24 종료  -----------
+		
+		
+		// 조건문 
+		if (M < 45) { // 45분 이하일때 
+			H--; // 시간 -1
+			M = M - 45 + 60; // 분 - 45 + 60(1H)
+			
+			if (H < 0) { // M < 45 이고 H-- 한 시간이 0 미만 일 경우
+				H = 23; 
+			}
+			System.out.println(H + " " + M);
+		} else {
+			System.out.println(H + " " + (M - 45));
+		}
+		// ----------- 조건문 종료  -----------
+
+		
+		
+		
+		
+	}
+
+}

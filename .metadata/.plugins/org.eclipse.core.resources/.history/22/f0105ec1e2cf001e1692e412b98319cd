@@ -71,9 +71,7 @@ public class number_15552 {
 		}
 		// --------- 반복문 종료 --------
 		
-		br.close();
 		bw.flush(); // 버퍼에 있는 데이터 출력 후 비움
-		bw.close();
 	}
 
 }

@@ -67,13 +67,12 @@ public class number_15552 {
 		// --------- 반복문 시작 --------
 		for(int i = 0; i < T; i++) {
 			st = new StringTokenizer(br.readLine(), " "); // StringTokenizer 객체 생성
-			bw.write(Integer.parseInt(st.nextToken()) + Integer.parseInt(st.nextToken()) + "\n"); // 형변환 후 계산 후 줄바꿈 까지한 후 버퍼에 저장 
+			bw.write(Integer.parseInt(st.nextToken()) + Integer.parseInt(st.nextToken())); // 형변환 후 계산 후 출력
 		}
 		// --------- 반복문 종료 --------
 		
-		br.close();
-		bw.flush(); // 버퍼에 있는 데이터 출력 후 비움
-		bw.close();
+		bw.flush();
+		
 	}
 
 }

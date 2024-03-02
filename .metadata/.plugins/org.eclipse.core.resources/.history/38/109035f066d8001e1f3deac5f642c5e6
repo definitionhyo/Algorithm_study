@@ -41,6 +41,7 @@ public class number_2438 {
 			}
 			System.out.println();
 		}
+		
 //		-------- 2-1) 반복문 종료 --------
 		
 	}

@@ -3,7 +3,6 @@ package baekjoon.loop;
 import java.io.BufferedReader;
 import java.io.IOException;
 import java.io.InputStreamReader;
-import java.util.StringTokenizer;
 
 public class number_2438 {
 
@@ -36,10 +35,10 @@ public class number_2438 {
 		
 //		-------- 2-1) 반복문 시작 --------
 		for(int i = 0; N > i; i++) {
-			for(int j = 0; i >= j; j++) {
+			for(int j = 0; i >= j; j++) { // *의 개수 만큼 출력
 				System.out.print("*");
 			}
-			System.out.println();
+			System.out.println(); // 줄바꿈
 		}
 //		-------- 2-1) 반복문 종료 --------
 		

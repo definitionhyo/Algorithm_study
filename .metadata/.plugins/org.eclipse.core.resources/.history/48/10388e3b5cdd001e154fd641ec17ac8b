@@ -25,12 +25,7 @@ public class number_10952 {
 		int B; // 정수형 변수 B 선언
 		
 		
-		
 //		-------- 반복문 시작 --------
-		while (en.hasMoreElements()) {
-			type type = (type) en.nextElement();
-			
-		}
 		
 	}
 

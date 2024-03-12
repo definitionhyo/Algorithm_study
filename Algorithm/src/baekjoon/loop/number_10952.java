@@ -27,7 +27,7 @@ public class number_10952 {
 		
 		
 //		-------- 반복문 시작 --------
-		while (en.hasMoreElements()) {
+		while ()) {
 			type type = (type) en.nextElement();
 			
 		}

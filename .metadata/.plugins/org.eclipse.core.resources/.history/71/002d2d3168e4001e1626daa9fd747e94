@@ -16,8 +16,6 @@ public class number_10952 {
 //		br.readLine()은 EOF를 입력받으면 null 리턴하기 때문에 NullPointer발생
 //		문자열을 생성해서 while의 조건에 입력
 		
-//		즉 br.readLine()으로 입력값을 계속 읽되, 읽은 값이 null이 되면 반복문을 종료하는 방식
-		
 //		문제
 //		1-1) 두 정수 A와 B를 입력받은 다음,
 //		A+B를 출력하는 프로그램을 작성하시오.

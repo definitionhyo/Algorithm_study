@@ -27,9 +27,9 @@ public class number_10951 {
 		int B; // 정수형 변수 B 선언
 		
 //		-------- 반복문 시작 -------- 
-		while ((input = br.readLine()) != null ) {
+		while (true) {
 			
-			st = new StringTokenizer(input, " "); // StringTokenizer 객체 생성
+			st = new StringTokenizer(br.readLine(), " "); // StringTokenizer 객체 생성
 			A = Integer.parseInt(st.nextToken()); // 정수형으로 형변환 후 A에 대입
 			B = Integer.parseInt(st.nextToken()); // 정수형으로 형변환 후 B에 대입
 			

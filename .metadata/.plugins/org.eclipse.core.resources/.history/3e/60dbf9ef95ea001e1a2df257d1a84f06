@@ -22,13 +22,10 @@ public class number_10871 {
 //		X보다 작은 수를 입력받은 순서대로 공백으로 구분해 출력한다. 
 //		X보다 작은 수는 적어도 하나 존재한다.
 
-//		StringBuilder 사용해야함
-//		그냥 String 으로 연산을 계속하면 메모리 할당이 계속 반복되어 성능이 좋지않음
-		
 		BufferedReader br = new BufferedReader(new InputStreamReader(System.in)); // BufferedReader 객체 생성
 		int N; // 정수형 변수 N 생성
 		int X; // 정수형 변수 X 생성
-		StringTokenizer st = new StringTokenizer(br.readLine(), " ");; // StringTokenizer 객체 선언
+		StringTokenizer st; // StringTokenizer 객체 선언
 		
 //		1-1)
 		N = Integer.parseInt(st.nextToken()); // 첫번째 토큰을 정수형 형변환 후 대입
@@ -38,6 +35,7 @@ public class number_10871 {
 		
 //		-------- 반복문 시작(배열에 대입) --------
 		for(int i = 0; N > i; i++) {
+			st = new StringTokenizer(br.readLine(), " ");
 			array[i] = Integer.parseInt(st.nextToken()); // i번째 토큰을 정수형 형변환 후 대입 
 		}
 //		-------- 반복문 종료 --------

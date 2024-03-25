@@ -23,7 +23,6 @@ public class number_10871 {
 //		X보다 작은 수는 적어도 하나 존재한다.
 
 //		StringBuilder 사용해야함
-//		그냥 String 으로 연산을 계속하면 메모리 할당이 계속 반복되어 성능이 좋지않음
 		
 		BufferedReader br = new BufferedReader(new InputStreamReader(System.in)); // BufferedReader 객체 생성
 		int N; // 정수형 변수 N 생성

@@ -37,7 +37,7 @@ public class number_5597 {
 //		-------- 2) 반복문 시작 --------
 		for(int j = 0; j < 30; j++) {
 			if(student[j] == 0) {
-				System.out.println(j + 1);
+				System.out.println(student[j] + 1);
 			}
 		}
 		

@@ -1,11 +1,12 @@
 package baekjoon.deepening;
 
 import java.io.BufferedReader;
+import java.io.IOException;
 import java.io.InputStreamReader;
 
 public class number_1316 {
 
-	public static void main(String[] args) {
+	public static void main(String[] args) throws IOException {
 		
 //		문제
 //		그룹 단어란 단어에 존재하는 모든 문자에 대해서, 
@@ -24,7 +25,26 @@ public class number_1316 {
 //		출력
 //		첫째 줄에 그룹 단어의 개수를 출력한다.
 
+//		생각
+//		1) 연속하는지 확인하고
+//		2) 중복되는 문자가 나오면 제외하기
+ 
+		
 		BufferedReader br = new BufferedReader(new InputStreamReader(System.in)); // BufferedReader 객체 생성 후 초기화
+		String str = br.readLine(); // 문자열 저장
+		
+//		-------- 1) 확인하는 함수 생성--------
+		static boolean check(str) {
+			boolean[] alphabet = new boolean[26]; // 2) 위한 알파벳 개수 크기의 boolean형 배열 생성
+			
+//			-------- 1) 반복문 시작 --------
+			for(int i = 0; i < str.length(); i++) {
+				str.charAt(i) 
+			}
+			
+		}
+		
+		
 		
 		
 	}

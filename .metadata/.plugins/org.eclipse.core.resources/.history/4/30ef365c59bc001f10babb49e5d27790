@@ -32,9 +32,8 @@ public class number_1316 {
 		
 		BufferedReader br = new BufferedReader(new InputStreamReader(System.in)); // BufferedReader 객체 생성 후 초기화
 		int N = Integer.parseInt(br.readLine()); // 단어 개수
-		int count = 0; // 카운트하는 정수형 변수 count 생성
+		int count = 0;
 		
-//		--------- check함수를 통한 카운트 반복문 시작 ---------  
 		for(int i = 0; i < N; i++) {
 			String str = br.readLine();
 			if(check(str)) {
@@ -43,6 +42,7 @@ public class number_1316 {
 		}
 		
 		System.out.println(count);
+		
 		
 		
 		
@@ -56,9 +56,8 @@ public class number_1316 {
 		for(int i = 0; i < str.length(); i++) {
 			int now = str.charAt(i); // 현재 알파벳
 			int pre = (i > 0) ? str.charAt(i - 1) : 0; // 이전 알파벳 삼항연산자
-
-//			--------- 이미 체크 되어있는지 확인하는 if문 ---------
-			if(alphabet[now - 'a'] == false) { 
+			
+			if(alphabet[now - 'a'] == false) {
 				alphabet[now - 'a'] = true;
 			} else if(now != pre) {
 				return false;

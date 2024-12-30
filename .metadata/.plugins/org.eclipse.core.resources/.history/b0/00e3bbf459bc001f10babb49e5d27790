@@ -57,7 +57,7 @@ public class number_1316 {
 			int now = str.charAt(i); // 현재 알파벳
 			int pre = (i > 0) ? str.charAt(i - 1) : 0; // 이전 알파벳 삼항연산자
 
-//			--------- 이미 체크 되어있는지 확인하는 if문 ---------
+//			--------- 반복되는지 안되는지 alphabet 배열에 저장 ---------
 			if(alphabet[now - 'a'] == false) { 
 				alphabet[now - 'a'] = true;
 			} else if(now != pre) {

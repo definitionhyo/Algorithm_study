@@ -14,6 +14,10 @@
 		<item key="SmartImportRootWizardPage.STORE_NESTED_PROJECTS" value="true"/>
 		<item key="SmartImportRootWizardPage.STORE_CONFIGURE_NATURES" value="true"/>
 		<list key="org.eclipse.ui.internal.wizards.datatransfer.SmartImportRootWizardPage.knownSources">
+			<item value="C:\Users\euihyo\Desktop\study\아이티윌\아이티윌 수업자료\Web\html따라가기"/>
+			<item value="C:\Users\euihyo\Desktop\study\아이티윌\아이티윌 수업자료\Web\css따라가기"/>
+			<item value="C:\Users\euihyo\Desktop\study\아이티윌\아이티윌 수업자료\JSP\workspace_jsp5"/>
+			<item value="C:\Users\euihyo\Desktop\study\아이티윌\아이티윌 수업자료\Spring\workspace_spring5"/>
 			<item value="C:\Users\euihyo\Desktop\study\아이티윌\아이티윌 수업자료\Java\workspace_java5"/>
 		</list>
 	</section>

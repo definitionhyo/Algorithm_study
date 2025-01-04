@@ -46,13 +46,36 @@ public class number_25206 {
 //		등급은 A+,A0,B+,B0,C+,C0,D+,D0,F,P중 하나이다.
 //		적어도 한 과목은 등급이 P가 아님이 보장된다.
 		
-//		생각
-//		토큰화 하여 P가 아닌경우 평균을 구하기
 
 		BufferedReader br = new BufferedReader(new InputStreamReader(System.in)); // BufferedReader 객체 생성 후 초기화
-		StringTokenizer st = new StringTokenizer(br.readLine(), " "); // StringTokenizer 객체 생성 후 초기화
+		double totalScore = 0; // double형 totalScore 생성(총 점수)
+		double totalGrade = 0; // double형 totalGrade 생성(학점의 합)
+		String gradeArray[] = {"A+", "A0", "B+", "B0", "C+", "C0", "D+", "D0", "F", "P"}; // 학점 배열 생성
+		double gradeScore[] = {4.5, 4.0, 3.5, 3.0, 2.5, 2.0, 1.5, 1.0, 0.0}; // 학점 점수 배열 생성
 		
 		
+//		-------- 반복문 시작 --------
+		for(int i = 0; i < 20; i++) {
+			StringTokenizer st = new StringTokenizer(br.readLine(), " "); // StringTokenizer 객체 생성 후 초기화
+			String subject = st.nextToken(); // 문자열 subject 생성(과목명)
+			double score = Double.parseDouble(st.nextToken()); // doulbe형 score 생성(학점)
+			String grade = st.nextToken(); // 문자열 grade 생성(등급)
+			
+//		-------- 반복문 시작(학점별 점수, 과목 개수 저장) --------
+			if(!grade.equals("P")) {
+				for(int j = 0; j < gradeArray.length; j++) {
+					if(gradeArray[j].equals(grade)) {
+						totalScore += score * gradeScore[j]; // 총 점수
+						totalGrade += score; // 학점의 합
+						break;
+					}
+				}
+				
+			}
+			
+		}
+		
+		System.out.printf("%.6f\n", totalScore / totalGrade);
 		
 	}
 
